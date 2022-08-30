@@ -1,10 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- SEO -->
+    <!-- Kerywords -->
+    <meta name="keywords" content="Peliculas, Pelis, Movie, Film, Cinta">
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Responsive -->
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Titulo -->
+
     <title>Mis Peliculas</title>
+
+    <!-- Descripcion -->
+
+    <meta name="description" content="Pagina web de peliculas">
+
+    <!-- CSS -->
+
     <link rel="stylesheet" href="media/fontello/css/fontello.css">
     <link rel="stylesheet" href="estilos.css">
 </head>
@@ -26,7 +43,12 @@
 
     <main>
         <selction id="banner">
-            <img src="media/banner.jpg">
+            <picture>
+                <source media="(max-width: 479px)" srcset="media/banner-479w.jpg">
+                <source media="(max-width: 799px)" srcset="media/banner-480w.jpg">
+                <source media="(min-width: 800px)" srcset="media/banner.jpg">
+                <img src="media/banner.jpg">
+            </picture>
             <div class="contenedor">
                 <h2>Las mejores peliculas</h2>
                 <p>Cual es la mejor pelicula para usted?</p>

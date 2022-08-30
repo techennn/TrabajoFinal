@@ -43,6 +43,7 @@ section {
 /* Menu */
 #menu-bar {
   display: none;
+
 }
 
 #menu-bar:checked ~ .menu {
@@ -65,57 +66,57 @@ header label {
   background: rgba(51, 51, 51, 0.9);
   transition: all 0.5s;
   transform: translateX(-100%);
-}
-.menu a {
-  display: block;
-  color: #fff;
-  height: 50px;
-  text-decoration: none;
-  padding: 15px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-}
-.menu a:hover {
-  background: rgba(255, 255, 255, 0.3);
+  a {
+    display: block;
+    color: #fff;
+    height: 50px;
+    text-decoration: none;
+    padding: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  a:hover {
+    background: rgba(255, 255, 255, 0.3);
+  }
 }
 
 /* Banner */
 #banner {
   margin-top: 50px;
   position: relative;
-}
-#banner img {
-  width: 100%;
-  height: 100%;
-}
-#banner .contenedor {
-  position: absolute;
-  top: -350%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
-  color: #fff;
-}
-#banner h2 {
-  font-size: 28px;
-}
-#banner a {
-  display: block;
-  width: 100px;
-  color: #fff;
-  text-decoration: none;
-  padding: 7px;
-  margin-top: 10px;
-  border: 3px solid #fff;
-}
-#banner a:hover {
-  background: rgba(51, 51, 51, 0.5);
+  img {
+    width: 100%;
+    height: 100%;
+  }
+  .contenedor {
+    position: absolute;
+    top: -350%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: #fff;
+  }
+  h2 {
+    font-size: 28px;
+  }
+  a {
+    display: block;
+    width: 100px;
+    color: #fff;
+    text-decoration: none;
+    padding: 7px;
+    margin-top: 10px;
+    border: 3px solid #fff;
+  }
+  a:hover {
+    background: rgba(51, 51, 51, 0.5);
+  }
 }
 
 #bienvenidos {
   text-align: center;
   margin: 30px;
-}
-#bienvenidos p {
-  margin: 30px;
+  p {
+    margin: 30px;
+  }
 }
 
 /* Blog */
@@ -123,44 +124,44 @@ header label {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-}
-#blog h3, #blog h4 {
-  text-align: center;
-}
-#blog h3 {
-  font-size: 26px;
-  margin: 30px;
-}
-#blog article {
-  margin: 15px;
-}
-#blog img {
-  width: 100%;
-  max-width: 280px;
+  h3, h4 {
+    text-align: center;
+  }
+  h3 {
+    font-size: 26px;
+    margin: 30px;
+  }
+  article {
+    margin: 15px;
+  }
+  img {
+    width: 100%;
+    max-width: 280px;
+  }  
 }
 
 /* Info */
 #info {
   text-align: center;
   padding: 20px;
-}
-#info .contenedor {
-  background: #333;
-  color: #fff;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  border-radius: 10px;
+  .contenedor {
+    background: #333;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 10px;
+  }
 }
 
 .info-film {
   margin: 20px;
-}
-.info-film img {
-  width: 270px;
-  height: 180px;
-  border-radius: 10%;
-  border: 5px solid rgb(199, 199, 199);
+  img {
+    width: 270px;
+    height: 180px;
+    border-radius: 10%;
+    border: 5px solid rgb(199, 199, 199);
+  }
 }
 
 #info h3 {
@@ -184,10 +185,10 @@ footer .contenedor {
   width: 100%;
   text-align: center;
   font-size: 28px;
-}
-.sociales a {
-  color: #333;
-  text-decoration: none;
+  a {
+    color: #333;
+    text-decoration: none;
+  }
 }
 
 .icon-facebook {
@@ -209,13 +210,13 @@ footer .contenedor {
 /* Formulario de Contacto */
 .contacto-main {
   margin-top: 100px;
-}
-.contacto-main h2 {
-  color: #fff;
-  text-align: center;
-  margin: 0;
-  font-size: 30px;
-  margin-bottom: 20px;
+  h2 {
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
 }
 
 form {
@@ -247,9 +248,9 @@ textarea {
   background: #1f1f1f;
   color: #fff;
   padding: 20px;
-}
-#boton :hover {
-  cursor: pointer;
+  :hover {
+    cursor: pointer;
+  }
 }
 
 .contacto-footer {
@@ -266,19 +267,19 @@ textarea {
   width: 100%;
   margin: auto;
   overflow: hidden;
-}
-.slider ul {
-  display: flex;
-  padding: 0;
-  width: 400%;
-  animation: cambio 20s infinite alternate linear;
-}
-.slider li {
-  width: 100%;
-  list-style: none;
-}
-.slider img {
-  width: 100%;
+  ul {
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: cambio 20s infinite alternate linear;
+  }
+  li {
+    width: 100%;
+    list-style: none;
+  }
+  img {
+    width: 100%;
+  }
 }
 
 @keyframes cambio {
@@ -328,6 +329,7 @@ textarea {
   }
 }
 @media (min-width: 481px) and (max-width: 1023px) {
+
   form {
     width: 450px;
   }
@@ -343,6 +345,5 @@ textarea {
     width: 100%;
   }
 }
-/*# sourceMappingURL=estilos.css.map */
 
 /*# sourceMappingURL=estilos.css.map */
