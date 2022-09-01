@@ -1,0 +1,35 @@
+/* Info */
+#info {
+    text-align: center;
+    padding: 20px;
+    .contenedor {
+      background: #333;
+      color: #fff;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      border-radius: 10px;
+    }
+  }
+
+/*_* Mixin *-*/
+
+@mixin tamanio ($ancho, $alto) {
+    width: $ancho;
+    height: $alto;
+}
+
+  .info-film {
+    margin: 20px;
+    img {
+      @include tamanio (270px, 180px);
+      border-radius: 10%;
+      border: 5px solid rgb(199, 199, 199);
+    }
+  }
+  
+  #info h3 {
+    font-size: 36px;
+    margin: 30px;
+  }
+  

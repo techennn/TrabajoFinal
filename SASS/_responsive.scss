@@ -1,0 +1,38 @@
+/* Responsive */
+@media (min-width: 1024px) {
+    .menu {
+      position: static;
+      width: auto;
+      height: auto;
+      transform: translateX(0%);
+      float: right;
+      display: flex;
+    }
+    .menu a {
+      border: none;
+    }
+    header label {
+      display: none;
+    }
+    form {
+      width: 450px;
+    }
+  }
+  @media (min-width: 481px) and (max-width: 1023px) {
+  
+    form {
+      width: 450px;
+    }
+  }
+  @media (max-width: 480px) {
+    #banner h2 {
+      font-size: 40px;
+    }
+    #banner a {
+      margin-top: 25px;
+    }
+    form {
+      width: 100%;
+    }
+  }
+  

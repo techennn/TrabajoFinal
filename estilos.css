@@ -1,45 +1,276 @@
+/* Impport */
 @import url("https://fonts.googleapis.com/css2?family=Kanit:wght@100&family=Silkscreen&display=swap");
-* {
-  margin: 0;
-  padding: 0;
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@100&family=Silkscreen&display=swap");
+*,
+*:before,
+*::after {
   box-sizing: border-box;
 }
 
+html,
 body {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  background: rgb(207, 207, 207);
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
   display: block;
 }
 
-header {
+body {
+  line-height: 1.317101995;
+  scroll-behavior: smooth;
+  font-family: "Kanit", sans-serif;
+  font-family: "Silkscreen", cursive;
+  background-color: #ffffff;
+}
+
+.entrada h1 {
+  margin-left: 2%;
+}
+
+button:focus {
+  outline: 0;
+}
+
+.centered-elements {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
   width: 100%;
-  height: 50px;
-  background: #333;
-  color: #fff;
-  position: fixed;
+}
+
+/*-*- Maps -*-*/
+.content {
+  background: linear-gradient(to right, rgb(63, 0, 165), rgb(95, 0, 59));
+  font-family: "Kanit", sans-serif;
+  font-family: "Silkscreen", cursive;
+}
+
+/*-*- EXTENDS -*-*/
+.link {
+  position: relative;
+  display: block;
+  text-transform: uppercase;
+  color: #dddddd;
+  text-decoration: none;
+  text-align: center;
+  font-size: 28px;
+  cursor: pointer;
+  width: fit-content;
+  margin: 0 auto 48px;
+  z-index: 0;
+  transition: all 450ms ease;
+}
+.link::after, .link::before {
+  content: "";
+  display: block;
+  position: absolute;
+  transition: width 540ms, opacity 300ms ease;
+}
+
+/* LINK 1 */
+.link--1 {
+  padding: 0 6px;
+}
+.link--1::before, .link--1::after {
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  height: 0.1em;
+  width: 0;
+}
+.link--1::before {
+  left: 0;
+}
+.link--1::after {
+  background-color: #ff29ad;
+  right: 0;
+}
+.link--1:hover {
+  color: #ff29ad;
+}
+.link--1:hover::before {
+  width: 60%;
+  transition: width 250ms ease;
+  background-color: #ff29ad;
+}
+.link--1:hover::after {
+  width: 100%;
+  background-color: transparent;
+}
+
+/* LINK 2 */
+.link--2::before, .link--2::after {
+  height: 0.1em;
+  bottom: -1px;
+}
+.link--2::before {
+  width: 0;
+  background-color: #ff2626;
+}
+.link--2::after {
+  width: 100%;
+  border: 1px solid #ff2626;
+  border-top: 0;
+  opacity: 0;
+}
+.link--2:hover {
+  color: #ff2626;
+}
+.link--2:hover::before {
+  width: 0;
+  animation: width 1500ms ease forwards;
+}
+.link--2:hover::after {
+  opacity: 1;
+}
+
+@keyframes width {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 100%;
+  }
+  100% {
+    width: 70%;
+  }
+}
+/* LINK 3 */
+.link--3 {
+  height: 56px;
+  width: 164px;
+  display: grid;
+  place-items: center;
+}
+.link--3-b-tr, .link--3-b-bl {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.link--3-b-tr::before, .link--3-b-tr::after, .link--3-b-bl::before, .link--3-b-bl::after {
+  content: "";
+  position: absolute;
+  background-color: #2428ff;
+  transition: all 400ms ease-in-out;
+}
+.link--3-b-tr::before {
+  right: 0;
+  bottom: 0;
+  width: 0;
+  height: 1px;
+}
+.link--3-b-tr::after {
+  right: 0;
+  top: 0;
+  height: 0;
+  width: 1px;
+}
+.link--3-b-bl::before {
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 1px;
+}
+.link--3-b-bl::after {
+  left: 0;
+  bottom: 0;
+  height: 0;
+  width: 1px;
+}
+.link--3:hover {
+  color: #2428ff;
+}
+.link--3:hover .link--3-b-tr::before,
+.link--3:hover .link--3-b-bl::before {
+  width: 100%;
+}
+.link--3:hover .link--3-b-tr::after,
+.link--3:hover .link--3-b-bl::after {
+  height: 100%;
+}
+
+/* LINK 4 */
+.link--4::before {
+  content: attr(data);
   top: 0;
   left: 0;
-  z-index: 100;
+  width: 0;
+  height: 100%;
+  color: #ff00f2;
+  z-index: 1;
+  overflow: hidden;
+  text-shadow: 0 0 2px #ff00f2;
+  transition: all 480ms ease-in-out;
 }
-
-.contenedor {
-  width: 98%;
-  margin: auto;
-}
-
-h1 {
-  float: left;
-}
-
-header .contenedor {
-  display: table;
-}
-
-section {
+.link--4:hover::before {
   width: 100%;
-  margin-bottom: 25px;
 }
 
+/* LINK 5 */
+.link--5::before {
+  content: attr(data);
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  color: #4ed84a;
+  z-index: 1;
+  overflow: hidden;
+  text-shadow: 0 0 2px #4ed84a;
+  transition: all 480ms ease-in-out;
+}
+.link--5:hover::before {
+  width: 100%;
+}
+
+/*-* Responsive *-*/
+/* Mobile */
+@media only screen and (max-width: 481px) {
+  h4 {
+    position: fixed;
+    margin-top: 100%;
+    font-size: 10px;
+    font-style: normal;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  }
+  .link {
+    color: #dddddd;
+    font-size: 20px;
+  }
+}
+/* Tablet */
+@media only screen and (min-width: 481px) and (max-width: 978px) {
+  h4 {
+    position: fixed;
+    margin-top: 100%;
+    font-size: 12px;
+    font-style: normal;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  }
+  .link {
+    color: #dddddd;
+    font-size: 23px;
+  }
+}
+/* Desktop */
+@media only screen and (min-width: 979px) {
+  h4 {
+    position: fixed;
+    margin-top: 48%;
+    margin-left: 80%;
+    font-size: 14px;
+    font-style: normal;
+    font-family: "Kanit", sans-serif;
+    font-family: "Silkscreen", cursive;
+  }
+}
 /* Menu */
 #menu-bar {
   display: none;
@@ -153,6 +384,7 @@ header label {
   border-radius: 10px;
 }
 
+/*_* Mixin *-*/
 .info-film {
   margin: 20px;
 }
@@ -256,11 +488,6 @@ textarea {
   margin-top: 18%;
 }
 
-/* mapa */
-.mapa {
-  width: 100%;
-}
-
 /* Slider automatico */
 .slider {
   width: 100%;
@@ -343,6 +570,52 @@ textarea {
     width: 100%;
   }
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background: rgb(207, 207, 207);
+  display: block;
+}
+
+header {
+  width: 100%;
+  height: 50px;
+  background: #333;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.contenedor {
+  width: 98%;
+  margin: auto;
+}
+
+h1 {
+  float: left;
+}
+
+header .contenedor {
+  display: table;
+}
+
+section {
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+/* mapa */
+.mapa {
+  width: 100%;
+}
+
 /*# sourceMappingURL=estilos.css.map */
 
 /*# sourceMappingURL=estilos.css.map */

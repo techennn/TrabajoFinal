@@ -1,0 +1,10 @@
+En el archivo origen.scss se aplico el Import de cada archivo .scss
+
+En el archivo _entrada.scss se aplico el Maps, tambien se aplico Extends
+
+En el archivo _info.scss se aplico un pequeno Mixin
+
+En cada .html se aplico SEO
+
+El archivo entrada.htm es la pagina que primero debe verse ya que es la que da entrada a mi web
+
