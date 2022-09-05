@@ -14,54 +14,124 @@
 
     <!-- Titulo -->
 
-    <title>Inicio</title>
+    <title>Mis Peliculas</title>
 
     <!-- Descripcion -->
 
-    <meta name="description" content="Pagina web de peliculas">
+    <meta name="description" content="Pagina web de peliculas, area de inicio">
 
     <!-- CSS -->
 
-    <link rel="stylesheet" href="../SASS2/css/destino.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100&family=Silkscreen&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../media/fontello/css/fontello.css">
+    <link rel="stylesheet" href="../estilos.css">
 </head>
 <body>
     <header>
-
+        <div class="contenedor">
+            <h1 class="icon-dog"> Mis peliculas</h1>
+            <input type="checkbox" id="menu-bar">
+            <label class="icon-menu" for="menu-bar"></label>
+            <nav class="menu">
+                <a href="../index.html">Inicio</a>
+                <a href="../paginas/productos.html">Productos</a>
+                <a href="../paginas/Nosotros.html">Nosotros</a>
+                <a href="../paginas/pedidos.html">Pedidos</a>
+                <a href="../paginas/contacto.html">Contacto</a>
+            </nav>
+        </div>
     </header>
-    <main>  
-        <div class="content centered-elements">
-            <div>
-                
-                <a class="link link--1">
-                    Inicio
-                </a>
 
-                <a class="link link--2">
-                    Album
-                </a>
-
-                <a class="link link--3">
-                    <span>
-                        Nosotros
-                    </span>
-                    <i class="link--3-b-tr"></i>
-                    <i class="link--3-b-bl"></i>
-                </a>
-
-                <a class="link link--4" data="Contacto">
-                    Contacto
-                </a>
+    <main>
+        <selction id="banner">
+            <picture>
+                <source media="(max-width: 479px)" srcset="../media/banner-479w.jpg">
+                <source media="(max-width: 799px)" srcset="../media/banner-480w.jpg">
+                <source media="(min-width: 800px)" srcset="../media/banner.jpg">
+                <img src="../media/banner.jpg">
+            </picture>
+            <div class="contenedor">
+                <h2>Las mejores peliculas</h2>
+                <p>Cual es la mejor pelicula para usted?</p>
+                <a href="#">Leer mas</a>
 
             </div>
-            <h2>Creado por Martin Produciones</h2>
-        </div>
 
-    </main>  
+        </selction>
+
+        <selction id="bienvenidos">
+            <h2>BIENVENIDOS A NUESTRO CLUB</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi, odit. Ab, non molestiae aspernatur consequuntur odit architecto! Neque, doloremque hic nemo, voluptas debitis fugit numquam ad magni officiis, odio blanditiis.</p>
+        </selction>
+
+        <selection id="blog">
+            <h3>Lo ultimo salido en cines</h3>
+            <div class="contenedor"></div>
+                <article>
+                    <img src="../media/blog1.jpg" alt="">
+                    <h4>Assassin's creed</h4>
+                </article>
+                <article>
+                    <img src="../media/blog2.jpg" alt="">
+                    <h4>Francotirador</h4>
+                </article>
+                <article>
+                    <img src="../media/blog3.jpg" alt="">
+                    <h4>Hot fresh pizza</h4>
+                </article>
+                <article>
+                    <img src="../media/blog4.jpg" alt="">
+                    <h4>Spiderman</h4>
+                </article>
+                <article>
+                    <img src="../media/blog5.jpg" alt="">
+                    <h4>Avengers</h4>
+                </article>
+                <article>
+                    <img src="../media/blog6.jpg" alt="">
+                    <h4>Oblivium</h4>
+                </article>
+        </selection>
+
+        <selection id="info">
+            <h3>Biblioteca</h3>
+            <div class="contenedor">
+                <div class="info-film">
+                    <img src="../media/film1.jpg" alt="">
+                    <h4>Obi Wan Kenobi Star Wars</h4>
+                </div>
+                <div class="info-film">
+                    <img src="../media/film2.jpg" alt="">
+                    <h4>Darth Maul Star Wars</h4>
+                </div>
+                <div class="info-film">
+                    <img src="../media/film3.jpg" alt="">
+                    <h4>John Wick</h4>
+                </div>
+                <div class="info-film">
+                    <img src="../media/film4.jpg" alt="">
+                    <h4>Joker</h4>
+                </div>
+                <div class="info-film">
+                    <img src="../media/film5.jpg" alt="">
+                    <h4>Reminiscencia</h4>
+                </div>
+                <div class="info-film">
+                    <img src="../media/film6.jpg" alt="">
+                    <h4>The Flash Anime</h4>
+                </div>
+            </div>
+        </selection>
+    </main>
+
     <footer>
-
+        <div class="contenedor">
+            <p class="copy">Mis peliculas &copy; 2022</p>
+            <div class="sociales"></div>
+                <a class="icon-facebook" href="#"></a>
+                <a class="icon-twitter" href="#"></a>
+                <a class="icon-instagram" href="#"></a>
+                <a class="icon-googleplus" href="#"></a>
+        </div>
     </footer>
 </body>
 </html>
