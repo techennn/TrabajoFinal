@@ -368,6 +368,7 @@ header label {
 #blog img {
   width: 100%;
   max-width: 280px;
+  border-radius: 10px;
 }
 
 /* Info */
@@ -386,13 +387,34 @@ header label {
 
 /*_* Mixin *-*/
 .info-film {
-  margin: 20px;
+  margin: 10px;
+  transition: 1s;
 }
 .info-film img {
-  width: 270px;
-  height: 180px;
-  border-radius: 10%;
+  width: 290px;
+  height: 170px;
+  border-radius: 5%;
   border: 5px solid rgb(199, 199, 199);
+  display: block;
+}
+.info-film h4 {
+  position: relative;
+  margin-top: 1%;
+  margin-left: 1%;
+  align-items: center;
+  color: rgb(255, 255, 255);
+}
+
+.info-film:hover {
+  transform: scale(1.5);
+  z-index: 2;
+  cursor: pointer;
+}
+.info-film:hover img {
+  border: 1px solid black;
+}
+.info-film:hover h4 {
+  color: rgba(51, 51, 51, 0);
 }
 
 #info h3 {
@@ -480,7 +502,8 @@ textarea {
   color: #fff;
   padding: 20px;
 }
-#boton :hover {
+
+#boton:hover {
   cursor: pointer;
 }
 
@@ -553,10 +576,29 @@ textarea {
   form {
     width: 450px;
   }
+  .video-inicio {
+    border: solid 10px black;
+    width: 560px;
+    height: 315px;
+    margin: 25px;
+    border-radius: 5px;
+  }
 }
 @media (min-width: 481px) and (max-width: 1023px) {
   form {
     width: 450px;
+  }
+  .video-inicio {
+    border: solid 5px black;
+    width: 400px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    border-radius: 5px;
+    display: block;
+    align-items: center;
+    margin-bottom: 5%;
   }
 }
 @media (max-width: 480px) {
@@ -568,6 +610,17 @@ textarea {
   }
   form {
     width: 100%;
+  }
+  .video-inicio {
+    width: 300px;
+    height: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    border-radius: 5px;
+    display: block;
+    align-items: center;
+    margin-bottom: 5%;
   }
 }
 * {
@@ -602,6 +655,16 @@ h1 {
   float: left;
 }
 
+article img {
+  box-shadow: 0 0 20px grey;
+}
+
+article:hover {
+  cursor: pointer;
+  background-color: rgba(43, 37, 37, 0.582);
+  border-radius: 5px;
+}
+
 header .contenedor {
   display: table;
 }
@@ -611,9 +674,12 @@ section {
   margin-bottom: 25px;
 }
 
-/* mapa */
-.mapa {
-  width: 100%;
+.box img {
+  box-shadow: 0 0 20px grey;
+}
+
+.spoty {
+  margin-left: 10%;
 }
 
 /*# sourceMappingURL=estilos.css.map */

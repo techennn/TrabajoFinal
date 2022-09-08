@@ -20,11 +20,32 @@
 }
 
   .info-film {
-    margin: 20px;
+    margin: 10px;
+    transition: 1s;
     img {
-      @include tamanio (270px, 180px);
-      border-radius: 10%;
+      @include tamanio (290px, 170px);
+      border-radius: 5%;
       border: 5px solid rgb(199, 199, 199);
+      display: block;
+    }
+    h4 {
+      position: relative;
+      margin-top: 1%;
+      margin-left: 1%;
+      align-items: center;
+      color: rgb(255, 255, 255);
+    }
+  }
+
+  .info-film:hover {
+    transform: scale(1.5);
+    z-index: 2;
+    cursor: pointer;
+    img {
+      border: 1px solid black;
+    }
+    h4 {
+      color: rgba(51, 51, 51, 0);
     }
   }
   

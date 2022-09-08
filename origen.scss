@@ -44,6 +44,19 @@ h1 {
   float: left;
 }
 
+article {
+  img {
+    box-shadow: 0 0 20px grey;
+  }
+}
+
+article:hover {
+  cursor: pointer;
+  background-color: rgba(43, 37, 37, 0.582);
+  border-radius: 5px;
+}
+
+
 header .contenedor {
   display: table;
 }
@@ -53,10 +66,14 @@ section {
   margin-bottom: 25px;
 }
 
-/* mapa */
-.mapa {
-  width: 100%;
+.box {
+  img {
+    box-shadow: 0 0 20px grey;
+  }
 }
 
+.spoty {
+  margin-left: 10%;
+}
 
 /*# sourceMappingURL=estilos.css.map */
